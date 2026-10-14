@@ -1,0 +1,9 @@
+{
+  "badge": "DSH 请求申请",
+  "head": "关于「PowerShell 命令」的请求申请",
+  "body": "任务：整理 DSH 插件市场的通知类插件\n理由：读取 registry.json 并按分类统计插件数量\n点卡片查看详情，或直接确认放行",
+  "footer": "点卡片看详情（并打开 DSH）· 点「确认允许」直接放行",
+  "okLabel": "确认允许",
+  "okCode": 10,
+  "hostProcess": "DeepSeek Harness"
+}

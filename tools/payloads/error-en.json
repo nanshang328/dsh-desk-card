@@ -1,0 +1,9 @@
+{
+  "badge": "DSH task error",
+  "head": "Task \"registry scan\" failed",
+  "body": "turn 3, step 7\nError: convert-to-json failed: unexpected end of input",
+  "footer": "Click the card to open DSH for details",
+  "okLabel": "Got it",
+  "okCode": 10,
+  "hostProcess": "DeepSeek Harness"
+}

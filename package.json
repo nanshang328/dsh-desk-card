@@ -1,0 +1,54 @@
+{
+  "name": "dsh-desk-card",
+  "version": "0.1.0",
+  "description": "Bottom-right native desktop cards for DSH approvals, questions, turn completion and errors: a self-drawn WPF card that can be approved in place, and is skipped while a fullscreen app or Do-Not-Disturb is active.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "screenshots.json"
+  ],  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check lib/index.js"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "notification",
+    "approval",
+    "card",
+    "popup",
+    "windows"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanshang328/dsh-desk-card.git"
+  },
+  "homepage": "https://github.com/nanshang328/dsh-desk-card#readme",
+  "bugs": {
+    "url": "https://github.com/nanshang328/dsh-desk-card/issues"
+  }
+}

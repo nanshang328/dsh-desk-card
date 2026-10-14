@@ -1,0 +1,24 @@
+# dsh-desk-card bundle patch: mount this package into the profile.
+#
+# The profile is composed as patches: every bundle listed in
+# package.json -> dsh.profile.bundles contributes one layer, then the profile's own
+# cordis.patch.yml, then any --patch overlays. `name` must stay the package name so
+# Node resolves the installed copy (never a source path).
+#
+# Every value below is the built-in default, so all of it can be omitted. To change
+# anything, override the same id from the profile's own cordis.patch.yml — note that a
+# later patch REPLACES the whole `config` object (there is no deep merge), so restate
+# every key you still want.
+- insert:
+    - id: dsh-desk-card
+      name: 'dsh-desk-card'
+      # config:
+      #   timeoutSeconds: 0          # approval / question cards: 0 = stay until answered
+      #   doneTimeoutSeconds: 5      # completion card auto-closes after N seconds (0 = never)
+      #   scale: 1.2                 # card scale factor
+      #   skipWhenFullscreen: true   # skip while a fullscreen app or Do-Not-Disturb is active
+      #   notifyQuestions: true
+      #   notifyErrors: true
+      #   notifyDone: true
+      #   language: auto             # auto | zh | en
+      #   hostProcess: DeepSeek Harness  # window to focus when a card is clicked
